@@ -1,0 +1,10 @@
+project: savantenvs/parity-wasm
+target: deserialize-mined-94fba1c
+# seed-from: https://app.mayhem.security/savantenvs/parity-wasm/deserialize
+
+cmds:
+  - cmd: /mayhem/deserialize
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/deserialize-mined-94fba1c/testsuite
